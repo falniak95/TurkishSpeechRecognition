@@ -59,6 +59,7 @@ namespace TurkceKonusmaAlgilama
             {
                 MessageBox.Show("Etkin bir mikrofon bulamadım.", "Mikrofon Bağlı Değil", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+
             }
             button1.Enabled = false;
             button2.Enabled = true;
@@ -70,6 +71,7 @@ namespace TurkceKonusmaAlgilama
             button2.Enabled = false;
             this.Cursor = Cursors.WaitCursor;
             backgroundWorker1.RunWorkerAsync();
+
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
